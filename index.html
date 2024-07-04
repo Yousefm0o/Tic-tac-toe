@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>X-O Game</h1>
+        <p id="status"></p>
+        <div id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div id="statistics">
+            <p class="player" id="player-x">Player-X : <span></span></p>
+            <p class="player" id="player-o">Player-O : <span></span></p>
+        </div>
+        <button type="button" id="button" onclick="newGame()">New Game</button>
+    </div>
+    <script src="JS/file.js"></script>
+</body>
+</html>

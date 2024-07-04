@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.container {
+    width: 600px;
+    margin: 0px auto;
+    padding: 5px 30px;
+    padding-bottom: 10px;
+    background-color: #BAD7E9;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+#status {
+    height: 20px;
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #33425B;
+    padding: 15px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8E9F0;
+    width: calc((100% / 3) - 10px);
+    height: calc((100% / 3) - 10px);
+}
+
+.cell:hover {
+    background-color: rgb(197, 228, 255)
+}
+
+#statistics {
+    width: 500px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #33425B;
+}
+
+.player {
+    background-color: #29252C;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 8px;
+}
+
+.player span {
+    display: inline-block;
+    width: 5px;
+}
+
+button {
+    display: inline-block;
+    width: 150px;
+    padding: 15px 10px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #29252C;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #110f12;
+}
+
+.X {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.X span:first-child {
+    display: block;
+    width: 15px;
+    height: 100px;
+    background-color: #11468F;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 7.5px);
+    rotate: 45deg;
+}
+
+.X span:last-child {
+    display: block;
+    width: 15px;
+    height: 100px;
+    background-color: #041562;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 7.5px);
+    rotate: -45deg;
+}
+
+.O {
+    width: 65px;
+    height: 65px;
+    border: 15px solid #F33535;
+    border-radius: 50%;
+}
